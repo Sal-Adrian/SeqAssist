@@ -7,6 +7,30 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-  SeqAssist
+  <div>
+    <div>
+      <p>King = K</p>
+      <p>Queen = Q</p>
+      <p>Ace = A</p>
+    </div>
+    <div>
+      <p>♣ = C</p>
+      <p>♠ = S</p>
+      <p><span class="red">♦</span> = D</p>
+      <p><span class="red">♥</span> = H</p>
+    </div>
+    <div id="card">
+      <label for="card-text">Add Card: </label>
+      <input
+        type="text"
+        id="card-text"
+        name="card-text"
+        size="10"
+        placeholder="e.g. 7H" />
+    </div>
+    <p id="error">&nbsp;</p>
+    <button id="remove" type="button">Remove Card</button>: <span id="removeThisCard"></span>
+    <img id="board" src="images/sequence-board.jpg" />
+  </div>
 </body>
 </html>

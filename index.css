@@ -8,7 +8,59 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -100px;
+    /* top: -100px; */
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0% 3%;
+    min-width: 465px;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: rgb(255, 229, 197);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.right {
+    right: 0;
+}
+
+.no-spacing {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mx-1 {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.mx-3 {
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+.ml-1 {
+    margin-left: 2%;
+}
+
+.mt-2 {
+    margin-top: 5em;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.red {
+    color: red;
 }
 
 .correction-9-clubs {

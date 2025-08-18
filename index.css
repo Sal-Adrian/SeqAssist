@@ -1,0 +1,21 @@
+#board {
+    width: 95%;
+    z-index: 10;
+}
+
+#board-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100px;
+}
+
+.correction-9-clubs {
+    position: absolute;
+    top: 50.2%;
+    left: 23%;
+    width: 8.3%;
+    height: 9.1%;
+    z-index: 11;
+}

@@ -28,8 +28,13 @@
         size="10"
         placeholder="e.g. 7H" />
     </div>
-    <p id="error">&nbsp;</p>
-    <button id="remove" type="button">Remove Card</button>: <span id="removeThisCard"></span>
+    <p id="error" class="ml-1">&nbsp;</p>
+    <button id="remove" class="ml-1 mb-1" onclick="remove()" type="button">Remove Card</button><span id="removeThisCard">:</span>
+    <div id="hand">
+      
+    </div>
+    <div class="top-sleeve"></div>
+    <div class="sleeve"></div>
     <div id="board-container">
       <img id="board" src="./images/sequence-board.jpg" />
       <img class="correction-9-clubs" src="./images/8-clubs.jpg" />

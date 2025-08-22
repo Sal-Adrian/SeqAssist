@@ -16,18 +16,18 @@
 }
 @media only screen and (min-width: 768px) {
     p {
-        font-size: 30px;
+        font-size: 28px;
     }
     label, input, button, #removeThisCard {
-        font-size: 38px;
+        font-size: 36px;
     }
 }
 @media only screen and (min-width: 992px) {
     p {
-        font-size: 32px;
+        font-size: 30px;
     }
     label, input, button, #removeThisCard {
-        font-size: 40px;
+        font-size: 38px;
     }
 }
 
@@ -70,7 +70,13 @@
     min-width: 465px;
     overflow: auto;
     white-space: nowrap;
+    display: flex;
+    justify-content: center;
     background-color: rgb(255, 229, 197);
+}
+
+.main-container {
+    max-width: 900px;
 }
 
 .top-sleeve{
@@ -93,6 +99,10 @@
     position: absolute;
 }
 
+.relative {
+    position:relative
+}
+
 .right {
     right: 0;
 }
@@ -103,13 +113,13 @@
 }
 
 .mx-1 {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 .mx-3 {
-    margin-right: 17%;
-    margin-left: 17%;
+    margin-right: 14%;
+    margin-left: 14%;
 }
 
 .ml-1 {

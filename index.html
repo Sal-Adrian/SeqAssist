@@ -8,36 +8,40 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="absolute right mx-3 mt-2">
-      <p class="no-spacing">King = K</p>
-      <p class="no-spacing">Queen = Q</p>
-      <p class="no-spacing">Ace = A</p>
-    </div>
-    <div class="absolute right mx-1 mt-2">
-      <p class="no-spacing">♣ = C</p>
-      <p class="no-spacing">♠ = S</p>
-      <p class="no-spacing"><span class="red">♦</span> = D</p>
-      <p class="no-spacing"><span class="red">♥</span> = H</p>
-    </div>
-    <div id="card" class="ml-1 mt-2">
-      <label for="card-text">Add Card: </label>
-      <input
-        type="text"
-        id="card-text"
-        name="card-text"
-        size="10"
-        placeholder="e.g. 7H" />
-    </div>
-    <p id="error" class="ml-1">&nbsp;</p>
-    <button id="remove" class="ml-1 mb-1" onclick="remove()" type="button">Remove Card</button><span id="removeThisCard">:</span>
-    <div id="hand">
-      
-    </div>
-    <div class="top-sleeve"></div>
-    <div class="sleeve"></div>
-    <div id="board-container">
-      <img id="board" src="./images/sequence-board.jpg" />
-      <img class="correction-9-clubs" src="./images/8-clubs.jpg" />
+    <div class="main-container">
+      <div class="relative">
+        <div class="absolute right mx-3 mt-2">
+          <p class="no-spacing">King = K</p>
+          <p class="no-spacing">Queen = Q</p>
+          <p class="no-spacing">Ace = A</p>
+        </div>
+        <div class="absolute right mx-1 mt-2">
+          <p class="no-spacing">♣ = C</p>
+          <p class="no-spacing">♠ = S</p>
+          <p class="no-spacing"><span class="red">♦</span> = D</p>
+          <p class="no-spacing"><span class="red">♥</span> = H</p>
+        </div>
+      </div>
+      <div id="card" class="ml-1 mt-2">
+        <label for="card-text">Add Card: </label>
+        <input
+          type="text"
+          id="card-text"
+          name="card-text"
+          size="10"
+          placeholder="e.g. 7H" />
+      </div>
+      <p id="error" class="ml-1">&nbsp;</p>
+      <button id="remove" class="ml-1 mb-1" onclick="remove()" type="button">Remove Card</button><span id="removeThisCard">:</span>
+      <div id="hand">
+    
+      </div>
+      <div class="top-sleeve"></div>
+      <div class="sleeve"></div>
+      <div id="board-container">
+        <img id="board" src="./images/sequence-board.jpg" />
+        <img class="correction-9-clubs" src="./images/8-clubs.jpg" />
+      </div>
     </div>
   </div>
 </body>

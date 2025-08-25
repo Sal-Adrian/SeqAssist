@@ -78,5 +78,27 @@ function addCard(face, suit) {
   newCard.id = newId;
   newCard.src = `images/cards/${fileName}.svg`;
 
+  newCard.addEventListener("click", (e) => {
+    cardClicked(newCard, face, suit);
+  });
+
   document.getElementById('hand').append(newCard);
+}
+
+function cardClicked(newCard, face, suit) {
+  if (selectedCard) {
+    selectedCard.className = "notSelected card";
+  }
+  selectedCard = newCard;
+  changeCard(face, suit);
+}
+
+function changeCard(face, suit) {
+  selectedCard.className = "selected card";
+  const removeCard = document.getElementById('removeThisCard');
+  removeCard.innerHTML = ": " + face;
+  removeCard.innerHTML += suit == 'C' ? '♣' :
+  suit == 'D' ? '♦' :
+  suit == 'H' ? '♥' : '♠';
+  removeCard.className = (suit == 'D' || suit == 'H') ? "red" : "";
 }

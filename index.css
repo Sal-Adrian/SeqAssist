@@ -79,6 +79,31 @@
     max-width: 900px;
 }
 
+.card {
+    position: relative;
+    margin-right: 4px;
+    z-index: 1;
+    width: 13.5%;
+}
+
+.selected {
+    top: 3vw;
+    transition:
+        top 100ms;
+}
+
+.notSelected {
+    top: 10vw;
+    transition:
+        top 100ms;
+}
+
+.deleteCard {
+    top: 20vw;
+    transition:
+        top 150ms;
+}
+
 .top-sleeve{
     position: relative;
     width: 100%;

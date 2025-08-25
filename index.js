@@ -1,7 +1,9 @@
 const suits = ["C", "D", "H", "S"]
 const faces = ["A", "K", "Q", "10", "9", "8", "7", "6", "5", "4", "3", "2"]
 
+let newId = 0;
 let count = 0;
+let selectedCard = null;
 
 
 const cardBox = document.getElementById('card-text');
@@ -53,5 +55,28 @@ function parseCard(str) {
     return;
   }
 
-  console.log(face + " : " + suit);  
+  addCard(face, suit);  
+}
+
+function addCard(face, suit) {
+  count++; 
+  newId++;
+  let fileName = "";
+  if (face == 'A') fileName += "ace";
+  else if (face == 'K') fileName += "king";
+  else if (face == 'Q') fileName += "queen";
+  else fileName += face;
+  fileName += "_of_";
+  if (suit == 'C') fileName += "clubs";
+  else if (suit == 'D') fileName += "diamonds";
+  else if (suit == 'H') fileName += "hearts";
+  else fileName += "spades";
+  if (face == 'K' || face == 'Q') fileName += "2";
+
+  const newCard = document.createElement('img');
+  newCard.className = "notSelected card";
+  newCard.id = newId;
+  newCard.src = `images/cards/${fileName}.svg`;
+
+  document.getElementById('hand').append(newCard);
 }

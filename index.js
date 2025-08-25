@@ -15,6 +15,19 @@ cardBox.addEventListener('keypress', (e) => {
   }
 });
 
+const remove = () => {
+  if (selectedCard) {
+    selectedCard.className="deleteCard card"
+    setTimeout(() => {
+      selectedCard.remove();
+      selectedCard = null;
+      document.getElementById('removeThisCard').innerHTML = ":";
+      count--;
+    }, 150);
+  }
+} 
+
+
 function parseCard(str) {
   const errorMessage = document.getElementById('error');
   errorMessage.innerHTML = "&nbsp;";

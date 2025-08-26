@@ -120,6 +120,14 @@
     z-index: 5;
 }
 
+.highlighter {
+    position: absolute;
+    width: 8.6%;
+    height: 9.5%;
+    border-radius: 4.5%;
+    z-index: 15;
+}
+
 .absolute {
     position: absolute;
 }
@@ -161,6 +169,14 @@
 
 .red {
     color: red;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.green {
+    background-color: rgba(0, 255, 100, 0.5);
 }
 
 .correction-9-clubs {

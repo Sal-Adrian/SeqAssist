@@ -156,6 +156,22 @@ function updateBoard(newCard, face, suit) {
     cardClicked(newCard, face, suit);
   });
   
+  if (face === 'A') {
+    if (suit === 'C') {
+      loc1.style = `left: ${x[5]}%; top: ${y[7]}%;`;
+      loc2.style = `left: ${x[0]}%; top: ${y[8]}%;`;
+    } else if (suit === 'D') {
+      loc1.style = `left: ${x[6]}%; top: ${y[7]}%;`;
+      loc2.style = `left: ${x[1]}%; top: ${y[9]}%;`;
+    } else if (suit === 'H') {
+      loc1.style = `left: ${x[5]}%; top: ${y[1]}%;`;
+      loc2.style = `left: ${x[6]}%; top: ${y[4]}%;`;
+    } else {
+      loc1.style = `left: ${x[9]}%; top: ${y[4]}%;`;
+      loc2.style = `left: ${x[1]}%; top: ${y[2]}%;`;
+    }
+  }
+
   highlighted.push([newId, loc1, loc2]);
   board.append(loc1);
   board.append(loc2);

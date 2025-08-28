@@ -97,7 +97,7 @@ function addCard(face, suit) {
   const newCard = document.createElement('img');
   newCard.className = "notSelected card";
   newCard.id = newId;
-  newCard.src = `images/cards/${fileName}.svg`;
+  newCard.src = `Images/cards/${fileName}.svg`;
 
   newCard.addEventListener("click", (e) => {
     cardClicked(newCard, face, suit);

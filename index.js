@@ -170,6 +170,20 @@ function updateBoard(newCard, face, suit) {
       loc1.style = `left: ${x[9]}%; top: ${y[4]}%;`;
       loc2.style = `left: ${x[1]}%; top: ${y[2]}%;`;
     }
+  } else if (face === 'K') {
+    if (suit === 'C') {
+      loc1.style = `left: ${x[0]}%; top: ${y[7]}%;`;
+      loc2.style = `left: ${x[4]}%; top: ${y[7]}%;`;
+    } else if (suit === 'D') {
+      loc1.style = `left: ${x[7]}%; top: ${y[7]}%;`;
+      loc2.style = `left: ${x[2]}%; top: ${y[9]}%;`;
+    } else if (suit === 'H') {
+      loc1.style = `left: ${x[6]}%; top: ${y[1]}%;`;
+      loc2.style = `left: ${x[6]}%; top: ${y[5]}%;`;
+    } else {
+      loc1.style = `left: ${x[1]}%; top: ${y[3]}%;`;
+      loc2.style = `left: ${x[9]}%; top: ${y[3]}%;`;
+    }
   }
 
   highlighted.push([newId, loc1, loc2]);

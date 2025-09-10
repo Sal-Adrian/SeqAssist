@@ -187,3 +187,7 @@
     height: 9.1%;
     z-index: 11;
 }
+
+.footer {
+    padding-bottom: 3em;
+}

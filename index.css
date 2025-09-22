@@ -35,6 +35,15 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* scroll-behavior: smooth; */
+}
+::-webkit-scrollbar { 
+    display: none;
+}
+
 #error {
     margin-top: 0.25em;
     color: red;

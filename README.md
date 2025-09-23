@@ -2,3 +2,9 @@
 ### An assistant / card finder for the board game [Sequence](https://en.wikipedia.org/wiki/Sequence_(game)).
 
 It's a bit of a tradition to play Sequence whenever we have a family gathering. However, everytime it's my turn, I'm still looking around the board to see what my possible moves are. I don't want to keep everyone waiting, so I usually end up making the first move I see that seems good enough. The board isn't complicated, but I always find it difficult to keep track of my moves while holding a conversation. So, I made a minimalist webpage that will keep track of my possible moves. SeqAssist is designed to have a simple, responsive interace for mobile devices so I can spend less time looking at the board or my phone, and more time with my family.
+
+---
+
+<p align="center">
+  <img src="Images/example.png" width="500" />
+</p>

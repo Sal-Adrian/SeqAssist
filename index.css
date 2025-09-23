@@ -93,6 +93,7 @@ html {
     margin-right: 4px;
     z-index: 1;
     width: 13.5%;
+    cursor: pointer;
 }
 
 .selected {
@@ -135,6 +136,7 @@ html {
     height: 9.5%;
     border-radius: 4.5%;
     z-index: 15;
+    cursor: pointer;
 }
 
 .absolute {

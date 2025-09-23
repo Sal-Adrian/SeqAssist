@@ -29,7 +29,7 @@ const remove = () => {
     setTimeout(() => {
       selectedCard.remove();
       selectedCard = null;
-      document.getElementById('removeThisCard').innerHTML = ":";
+      document.getElementById('removeThisCard').innerHTML = "";
       count--;
     }, 150);
   }
@@ -126,7 +126,7 @@ function cardClicked(newCard, face, suit) {
 function changeCard(face, suit) {
   selectedCard.className = "selected card";
   const removeCard = document.getElementById('removeThisCard');
-  removeCard.innerHTML = ": " + face;
+  removeCard.innerHTML = face;
   removeCard.innerHTML += suit == 'C' ? '♣' :
   suit == 'D' ? '♦' :
   suit == 'H' ? '♥' : '♠';

@@ -2,32 +2,44 @@
     p {
         font-size: 12px;
     }
-    label, input, button, #removeThisCard {
+    label, input, button, span {
         font-size: 20px;
+    }
+    #removeThisCard {
+        font-size: 26px;
     }
 }
 @media only screen and (min-width: 600px) {
     p {
         font-size: 18px;
     }
-    label, input, button, #removeThisCard {
+    label, input, button, span {
         font-size: 26px;
+    }
+    #removeThisCard {
+        font-size: 32px;
     }
 }
 @media only screen and (min-width: 768px) {
     p {
         font-size: 24px;
     }
-    label, input, button, #removeThisCard {
+    label, input, button, span {
         font-size: 32px;
+    }
+    #removeThisCard {
+        font-size: 38px;
     }
 }
 @media only screen and (min-width: 992px) {
     p {
         font-size: 26px;
     }
-    label, input, button, #removeThisCard {
+    label, input, button, span {
         font-size: 34px;
+    }
+    #removeThisCard {
+        font-size: 40px;
     }
 }
 
@@ -43,9 +55,22 @@ html {
     display: none;
 }
 
-span:not(#removeThisCard) {
+button {
+    -webkit-font-smoothing: antialiased;
+    background-color: #222;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    transition: all 0.1s ease-out;
+  }
+  
+button:active {
+transform: scale(0.8);
+}
+
+strong {
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
 }
 
 #error {
